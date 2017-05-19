@@ -5,6 +5,9 @@ export default class ContactPage extends Component{
     return (
     <div>
       <h1>Contact Us</h1>
+      <p>
+        This is the page with our contact information.
+      </p>
     </div>
     )
   }

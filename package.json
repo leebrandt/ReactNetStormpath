@@ -1,5 +1,17 @@
 {
+  "name": "stormreactnet",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "dotnet watch run && webpack -w"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^3.0.2"
+  },
   "devDependencies": {
+    "aspnet-webpack": "^1.0.27",
+    "aspnet-webpack-react": "^1.0.5",
     "autoprefixer": "^6.7.2",
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
@@ -14,14 +26,14 @@
     "node-sass": "^4.5.0",
     "postcss-loader": "^1.2.2",
     "precss": "^1.4.0",
-    "react": "^15.4.2",
     "sass-loader": "^5.0.1",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-hot-middleware": "^2.16.1"
   },
-  "dependencies": {
-    "react-dom": "^15.4.2",
-    "react-router": "^3.0.2"
-  }
+  "description": "We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.",
+  "main": "webpack.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

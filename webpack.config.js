@@ -8,13 +8,10 @@ module.exports = {
     app: './js/app.js'
   },
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx?$/,
-      exclude: /(node_modules|bower_components|public\/)/,
-      loader: 'babel-loader',
-      query: {
-        presets: ['es2015', 'react']
-      }
+      exclude: /(node_modules|public\/)/,
+      loader: 'babel-loader'
     }, {
       test: /\.scss$/,
       use: [
@@ -44,7 +41,9 @@ module.exports = {
     }]
   },
   output: {
+    path: __dirname + 'wwwroot/js',
     filename: '[name].bundle.js',
-    path: __dirname + '/wwwroot/js'
+    publicPath: '/dist/',
+    sourceMapFilename: '[file].map'
   }
 };
